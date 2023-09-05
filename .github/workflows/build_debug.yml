@@ -45,7 +45,7 @@ jobs:
           fi
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug
+        run: ./gradlew --warning-mode all assembleDebug
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
